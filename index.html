@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"> <!-- ページの文字エンコーディングを設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- モバイルデバイスの表示に適応 -->
+    <title>Pokemon Dex</title> <!-- ページのタイトル -->
+    <link rel="stylesheet" href="style.css"> <!-- CSSファイルをリンク -->
+</head>
+<body>
+    <div class="center-container"> <!-- コンテンツを中央に配置するためのコンテナ -->
+<h1>English↔︎Japanese</h1>
+<h1>Pokemon Pokedex</h1>
+<p>Put in your Pokémon ID or name in English</p> <!-- タイトル -->
+<br>
+        <input type="text" id="pokemon-input" placeholder="Enter Pokemon name or ID"> <!-- ポケモンの名前またはIDを入力するテキストボックス -->
+        <button onclick="fetchPokemonData()">Search</button> <!-- 検索ボタン、クリックでJavaScriptの関数を呼び出す -->
+        <div id="language-buttons"> <!-- 言語切替ボタンを含むコンテナ -->
+            <button onclick="setLanguage('en')">English</button> <!-- 英語に切り替えるボタン -->
+            <button onclick="setLanguage('ja')">Japanese</button> <!-- 日本語に切り替えるボタン -->
+        </div>
+        <div id="pokemon-data"> <!-- ポケモンデータを表示するコンテナ -->
+            <img id="pokemon-image" alt="Pokemon image"> <!-- ポケモンの画像を表示 -->
+            <h2 id="pokemon-name"></h2> <!-- ポケモンの名前を表示 -->
+            <p id="pokemon-description"></p> <!-- ポケモンの説明を表示 -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScriptファイルをリンク -->
+</body>
+</html>

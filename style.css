@@ -1,0 +1,76 @@
+/* ページ全体のスタイル */
+body, html {
+    height: 100%; /* ページ全体の高さを100%に設定 */
+    margin: 0; /* デフォルトの余白を削除 */
+    display: flex; /* Flexboxを使用してレイアウトを設定 */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+    text-align: center; /* テキストを中央揃え */
+    background: url('https://www.pokemon.jp/special/ouchipokemon/img/wallpaper/swsh/sword_shield_02.jpg') no-repeat center center fixed;
+    background-size: cover; /* 背景画像をカバーで拡大縮小 */
+}
+
+/* 中央に配置するコンテナ */
+.center-container {
+    width: 80%; /* コンテナの幅を80%に設定 */
+    background-color: rgba(255, 255, 255, 0.8); /* 白の半透明背景色を設定 */
+    padding: 20px; /* 内側の余白を設定 */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* ボックスに影を追加 */
+    display: flex; /* Flexboxを使用してレイアウトを設定 */
+    flex-direction: column; /* 垂直方向に要素を配置 */
+    align-items: center; /* 中央揃え */
+}
+
+/* 言語切り替えボタン */
+#language-buttons {
+    margin: 20px 0; /* 上下に20pxの余白を設定 */
+}
+
+/* ポケモンデータ */
+#pokemon-data {
+    margin: 20px 0; /* 上に20pxの余白を設定 */
+}
+
+/* ポケモンの説明 */
+#pokemon-description {
+    font-size: 1.2em; /* フォントサイズを1.2emに設定 */
+    width: 100%; /* 幅を100%に設定 */
+    max-width: 600px; /* 最大幅を600pxに設定 */
+    margin: 20px auto; /* 上下に20pxの余白、左右に自動マージンで中央揃え */
+    text-align: left; /* テキストを左揃え */
+}
+
+/* ポップアップ表示用のスタイル */
+.popup-container {
+    display: none; /* 初期状態では非表示 */
+    position: fixed; /* 固定位置 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* 半透明な背景 */
+    z-index: 9999; /* 最前面に表示 */
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 80%; /* 画像の最大幅 */
+    max-height: 80%; /* 画像の最大高さ */
+    margin: auto; /* 中央揃え */
+    position: absolute; /* 絶対位置 */
+    top: 50%; /* 上端を中央に */
+    left: 50%; /* 左端を中央に */
+    transform: translate(-50%, -50%); /* 中央に移動 */
+}
+
+.popup-close {
+    position: absolute; /* 絶対位置 */
+    top: 10px; /* 上端からの位置 */
+    right: 10px; /* 右端からの位置 */
+    cursor: pointer; /* ポインターを表示 */
+    color: white; /* 文字色 */
+    font-size: 24px; /* フォントサイズ */
+}
+
