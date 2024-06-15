@@ -9,6 +9,7 @@
 
 ③DEMO
 デプロイしている場合はURLを記入（任意）
+https://emkyk.github.io/pokemondex_g01/
 
 ④作ったアプリケーション用のIDまたはPasswordがある場合
 ID: なし
